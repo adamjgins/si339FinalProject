@@ -1,0 +1,176 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #173b6c;
+  position: relative;
+
+}
+h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.hidden {
+    padding: 8px;
+    position: absolute;
+    background: white;
+    height: 30px;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+  }
+  a:focus {
+    transform: translateY(0%);
+  }
+
+ h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+  }
+
+header{
+    background-color: black;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    
+    
+
+    
+}
+
+.social-links{
+
+   
+    text-align: center;
+}
+
+
+.social-links a {
+   
+    filter: invert(1);
+
+
+  }
+
+
+  .social-links a:hover{
+    
+    filter: invert(0.5);
+  }
+  
+
+.profile{
+   clip-path: circle();
+   width: 50%;
+   display: block;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   
+   
+   
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    
+  }
+  
+  li a {
+    display: block;
+    
+    color: #000;
+    padding: 10%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+  
+
+  li a:hover, li a:active {
+    background-color: #555;
+    color: white;
+    text-decoration: underline;
+  }
+  .active{
+    background-color: #555;
+    color: white;
+    text-decoration: underline;
+
+
+  }
+
+  main{
+    margin-left: 27%;
+  }
+
+ 
+/* DEMO-SPECIFIC STYLES */
+
+.intro{
+    text-align: center;
+    width: 20%;
+    
+}
+
+
+.typewriter h2 {
+
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: 3px solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 3px; 
+    animation: 
+      typing 2.0s steps(20, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 20% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  main{
+    background-color: #fff;
+    color: navy;
+  }
+
+
+  
+
+.headshot{
+    width: 100%;
+}
+ 
+  
+  
+
