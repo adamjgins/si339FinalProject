@@ -4,32 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
 	<link rel="icon" href="images/favicon.ico">
 
 	<link rel="stylesheet" href="css/html5reset.css">
 
 	<link rel="stylesheet" href="css/style.css">
-	<title>About Me</title>
+
+	
+
+
+	<title>Portfolio</title>
 </head>
 
 
 <body>
+	
 
 	<header>
-		<a class="hidden" href="#main">Skip to content</a>
-
-		<h1>My Portfolio</h1>
-
 		
+
+		<div class="menuButton" onclick="menuFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		  </div>
+
+		  <a class="hidden" href="#content">Skip to content</a>
+		
+
+
+		<div class = "nav_menu" id = "nav_menu">
+		<h1 class = "page_title"> Adam Ginsberg</h1>
 		<div class="background_circle">
 		<img src="images/Adam_Ginsberg_Headshot.jpg" alt="Headshot" class = "profile">
 		</div>
 		<div class="social-links">
 			<a href="https://www.instagram.com/adamgins/?hl=en" class="instagram" target="_blank"><img src="images/instagram-logo-24.png" alt="instagram logo"></a>
-			<a href="https://www.facebook.com/people/Adam-Ginsberg/100005721015009/" class="facebook" target="_blank"><img src="images/facebook-logo-24.png" alt="facebooklogo"></a>
+			<a href="https://www.facebook.com/people/Adam-Ginsberg/100005721015009/" class="facebook" target="_blank"><img src="images/facebook-logo-24.png" alt="Facebook logo"></a>
 			<a href="https://www.linkedin.com/in/adamgins/" class="linkedin" target="_blank"><img src="images/linkedin-square-logo-24.png" alt="linkedin"></a>
 		</div>
-
 
 		<nav>
 
@@ -44,37 +59,248 @@
 
 		
 	</header>
-	<main id = "main">
+	<main >
+
+		<section class = "cover_portfolio">
+
+			<div class="typewriter">
+				<div class="typewriter-text">See my projects</div>
+			</div>
+		</br>
+
+			
+
+			<button class="learn_button"  onclick="scrollFunction1()">View Projects Here</button>
+
+			
+	
+
+		</section>
+
+		<div class = "content" id = "content">
+
+		<div class = "nestedlist">
 		<h2>SI 339</h2>
+		<ul class="bullet" >
+			<li><strong>Description:</strong> SI 339 is a web design class</li>
+			<li><strong>Skills Learned:</strong> 
+			  <ul class="skills">
+				<li>HTML</li>
+				<li>CSS </li>
+				<li>Javascript</li>
+				<li>Responsive Web Design</li>
+				<li>Accesibility</li>
+			  </ul>
+			</li>
+			
+		</ul>
+	</div>
+
+		<h3>Click an image below to learn more about a project!</h3>
+
+		<div class = "portfolio_images">
 		
-		<p>aLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
-		<img src="images/uno.png" alt="uno website">
-		<img src="images/nc.png" alt="new company website">
-		<img src="images/video.png" alt="video website">
-		<img src="images/flexbig.png" alt="big flex site">
-		<img src="images/flexsmall.png" alt="small flex site">
+		<div class = "pic_button">
+
+			<button onclick="modalFunction('uno_modal')">
+		
+				<img src="images/uno.png" alt="uno website">
+			</button>
 
 
+		<div id="uno_modal" class="modal">
+
+	
+		<div class="modal-content">
+			<button class="close" onclick="modalClose('nc_modal')">&times;</button>
+			<h2>SI 339 UNO Project</h2>
+	  		<p></p>
+		</div>
+  
+  		</div>
+		</div>
+	
+	<div class = "pic_button">
+
+		<button onclick="modalFunction('nc_modal')">
+			<img src="images/nc.png" alt="new company website">
+		</button>
+
+		<div id="nc_modal" class="modal">
+
+	
+			<div class="modal-content">
+		  	<button class="close" onclick="modalClose('nc_modal')">&times;</button>
+		  	<h2>SI 339 New Company Project</h2>
+	  		<p></p>
+			</div>
+	  
+	  </div>
+
+	</div>
+
+	<div class = "pic_button">
+
+		<button onclick="modalFunction('video_modal')">
+			<img src="images/video.png" alt="video website">
+		</button>
+
+		<div id="video_modal" class="modal">
+
+	
+			<div class="modal-content">
+		  	<button class="close" onclick="modalClose('video_modal')">&times;</button>
+		  	<h2>SI 339 Video Project</h2>
+	  		<p></p>
+
+			</div>
+	  
+	  </div>
+
+	</div>
+
+	<div class = "pic_button">
+
+		<button onclick="modalFunction('flexbig_modal')">
+			<img src="images/flexbig.png" alt="flex big website">
+		</button>
+
+		<div id="flexbig_modal" class="modal">
+
+	
+			<div class="modal-content">
+		  	<button class="close" onclick="modalClose('flexbig_modal')">&times;</button>
+		  	<h2>SI 339 Super Slick Company Project</h2>
+	  		<p></p>
+			</div>
+	  
+	  </div>
+
+	</div>
+	<div class = "pic_button">
+
+		<button onclick="modalFunction('flexsmall_modal')">
+			<img src="images/flexsmall.png" alt="small flex site">
+		</button>
+
+		<div id="flexsmall_modal" class="modal">
+
+	
+			<div class="modal-content">
+		  	<button class="close" onclick="modalClose('flexsmall_modal')">&times;</button>
+		  	<h2>SI 339 Super Slick Company Project (Resized)</h2>
+	  		<p></p>
+			</div>
+	  
+	  </div>
+
+	</div>
+
+
+	</div>
 
 		<h2>SI 206</h2>
-		<p>aLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
-		<img src="images/206.png" alt="regional">
-		<img src="images/airbnb.png" alt="airbnb data">
+
+		<div class = "portfolio_images">
+
+			<div class = "pic_button">
+
+				<button onclick="modalFunction('regional_modal')">
+					<img src="images/206.png" alt="Regional Data Project">
+				</button>
+		
+				<div id="regional_modal" class="modal">
+		
+			
+					<div class="modal-content">
+					  <button class="close" onclick="modalClose('regional_modal')">&times;</button>
+					  <h2>SI 206 Regional Data Project</h2>
+					  <p></p>
+					</div>
+			  
+			  </div>
+		
+			</div>
+
+			<div class = "pic_button">
+
+				<button onclick="modalFunction('airbnb_modal')">
+					<img src="images/airbnb.png" alt="Airbnb Data Photo">
+				</button>
+		
+				<div id="airbnb_modal" class="modal">
+		
+			
+					<div class="modal-content">
+					  <button class="close" onclick="modalClose('airbnb_modal')">&times;</button>
+					  <h2>SI 206 Airbnb Data Project</h2>
+					  <p></p>
+					</div>
+			  
+			  </div>
+		
+			</div>
 
 
+
+
+
+
+		
+		</div>
 
 
 		<h2>Personal Projects</h2>
-		<p>aLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
-		<img src="images/dsd.jpg" alt="dsd logo">
+		<div class = "portfolio_images">
+
+
+		<div class = "pic_button">
+
+			<button onclick="modalFunction('dsd_logo_modal')">
+				<img src="images/dsd.jpg" alt="Deep Sea Detailing Logo">
+			</button>
+	
+			<div id="dsd_logo_modal" class="modal">
+	
 		
-		<img src="images/dsdweb.png" alt="DSD website">
+				<div class="modal-content">
+				  <button class="close" onclick="modalClose('dsd_logo_modal')">&times;</button>
+				  <h2>Deep Sea Detailing Logo Design </h2>
+				  <p></p>
+				</div>
+		  
+		  </div>
+	
+		</div>
+
+		<div class = "pic_button">
+
+			<button onclick="modalFunction('dsd_web_modal')">
+				<img src="images/dsdweb.png" alt="Deep Sea Detailing Website">
+			</button>
+	
+			<div id="dsd_web_modal" class="modal">
+	
 		
+				<div class="modal-content">
+				  <button class="close" onclick="modalClose('dsd_web_modal')">&times;</button>
+				  <h2>Deep Sea Detailing Web Design </h2>
+				  <p></p>
+				</div>
+		  
+		  </div>
+	
+		</div>
+
+	
+		</div>
 		
+	</div>
 	</main>
 
 	<footer>
-		<p>Adam Ginsberg &copy; 2022</p>
+		<p class = "page_title">Adam Ginsberg &copy; 2022</p>
 	</footer>
 </body>
+<script src="js/main.js"></script>
 </html>

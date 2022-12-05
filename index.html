@@ -11,20 +11,44 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 
 	<link rel="stylesheet" href="css/style.css">
+
+	
+
+
 	<title>About Me</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+
+
 </head>
 
 
 <body>
+	
 
 	<header>
-		<a class="hidden" href="#early_life">Skip to content</a>
+
+		<div class="menuButton" tabindex="0" onclick="menuFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		  </div>
+	
+
+		  <a class="hidden" href="#content">Skip to content</a>
+		
 
 
-		<h1> Adam Ginsberg</h1>
+		<div class = "nav_menu" id = "nav_menu">
+		<h1 class = "page_title"> Adam Ginsberg</h1>
 		<div class="background_circle">
 		<img src="images/Adam_Ginsberg_Headshot.jpg" alt="Headshot" class = "profile">
 		</div>
+
+
 		<div class="social-links">
 			<a href="https://www.instagram.com/adamgins/?hl=en" class="instagram" target="_blank"><img src="images/instagram-logo-24.png" alt="instagram logo"></a>
 			<a href="https://www.facebook.com/people/Adam-Ginsberg/100005721015009/" class="facebook" target="_blank"><img src="images/facebook-logo-24.png" alt="Facebook logo"></a>
@@ -43,34 +67,69 @@
 			</ul>
 		</nav>
 
-		
+	</div>
 	</header>
 	
 	<main>
-		<!--introduction paragraph-->
-		<div class = "typewriter">
-		<h2 class="intro" >Introduction</h2>
-		</div>
-		<p></p>
-
-		<img class = "headshot" src="images/Adam_Ginsberg_Headshot.jpg" alt="Headshot">
 
 		
 
-		<div class = "early_life" id = "early_life">
-			<h2>Early Life</h2>
-			<p>sadlkjhfk;djshfkj;sdhfkjdsjfhkajsdhfkasdlkfa</b>sdhfakjlsdhfkjlasdhfjklasdhfasdfsadfasdfasdfasdfasdlfnasdkljfhjklasdhfjkasdsfadslkjfh</p>
+		
 
-		</div>
 
-		<h2>Collge</h2>
+		<!--introduction paragraph-->
 
-		<p></p>
+		<section class = "cover_main" >
 
+			<div class="typewriter">
+				<div class="typewriter-text">Welcome to my Website</div>
+			</div>
+		</br>
+
+			
+
+			<button class="learn_button"  onclick="scrollFunction1()">Learn About Me</button>
+
+			
+	
+
+		</section>
+
+		
+		
+		
+		
+		<div class = "content" id = "content">
+		
+
+
+			<h2>About Me</h2>
+			<h3>Hi!</h3>
+			<p> My name is adam ginsberg and I'm currently a junior at the University of Michigan pursuing a bachelor of science in information with a focus in data analytics. Additionally, i am studying a double minor in both economics and entrepreneurship. </p>
+		</br>
+			<ul>
+
+				<li>Website:</li>
+				<li>Phone:</li>
+				<li>Email:</li>
+				<li>Degree:</li>
+			</ul>
+
+		</br>
+		<h2>College</h2>
+
+		<p>At the univeristy of michigan I have...<br></p>
+
+		<p>aLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
+
+		<p>aLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
+
+	</div>
 	</main>
 
 	<footer>
-		<p>Adam Ginsberg &copy; 2022</p>
+		<p class = "page_title">Adam Ginsberg &copy; 2022</p>
 	</footer>
 </body>
+<script src="js/main.js"></script>
 </html>
