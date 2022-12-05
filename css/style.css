@@ -331,7 +331,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     max-height: 100%;
     justify-content: center;
   }
@@ -422,10 +422,7 @@ h2{
   cursor: pointer;
 }
 
-.work_cards_grid{
 
-
-}
 
 
 
@@ -468,12 +465,12 @@ font-size: 25px;}
 .work_card {
   display: grid;
   grid-template-areas:
-    'name name name name name name'
-    'title title title title title title '
-    'logo logo place place place place'
-    'logo logo date date date date'
-    'description description description description description description';
-  gap: 5px;
+  'logo logo logo logo logo logo '
+  'name name name name name name'
+  'title title title title title title '
+  'place place place place place place'
+  'description description description description description description';
+  gap: 10px;
 
 
   
@@ -511,12 +508,77 @@ main{
   margin-left: 27%;
 }
 
+.work_card {
+  display: grid;
+  grid-template-areas:
+
+    'name name name name name name'
+    'title title title title title title '
+    'logo logo place place place place'
+    'logo logo date date date date'
+    'description description description description description description';
+  gap: 5px;
 
 
-
-
-
+  
+  padding: 10px;
 }
+
+  .portfolio_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px){
+  
+  .nav_menu{
+    transform:translateX(0%);
+  }
+  
+  .menuButton{
+    transform: translateY(-500%);
+    transition: transform 0.3s;
+  }
+  
+  main{
+    margin-left: 27%;
+  }
+
+  .work_card {
+    display: grid;
+    grid-template-areas:
+      'name name name name name name'
+      'title title title title title title '
+      'logo logo place place place place'
+      'logo logo date date date date'
+      'description description description description description description';
+    gap: 5px;
+  
+  
+    
+    padding: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  }
  
   
   
