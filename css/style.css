@@ -207,7 +207,7 @@ h2{
   .cover_main{
    width: 100%;
    height: 100vh;
-   background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("/images/sailing.jpg");
+   background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("../images/sailing.jpg");
   
     background-position-x:center ;
     background-position-y:center ;
@@ -221,7 +221,7 @@ h2{
   .cover_portfolio{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("/images/code_background.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("../images/code_background.jpg");
    
      background-position-x:center ;
      background-position-y:center ;
@@ -236,7 +236,7 @@ h2{
    .cover_work{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url("/images/work_canvas.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url("../images/work_canvas.jpg");
    
      background-position-x:center ;
      background-position-y:center ;
