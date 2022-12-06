@@ -666,6 +666,30 @@ main{
   
   
   }
+
+  @media (prefers-reduced-motion:reduce) {
+
+    .bar1, .bar2, .bar3 {
+
+      transition: 0.0s;
+    }
+
+    .menuButton{
+
+      transition: transform 0.0s;
+    }
+
+    .nav_menu{
+      transition: transform 0.0s;
+    }
+
+
+    .hidden{
+      transition: transform 0.0s;
+    }
+
+
+  }
  
   
   
