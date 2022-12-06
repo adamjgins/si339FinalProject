@@ -18,19 +18,19 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 h2{
-  font-size: 30px;
+  font-size: 50px;
 }
 h3{
-  font-size: 25px;
+  font-size: 45px;
 }
 
 p{
   color: #272829;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .intro_p{
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .page_title{
@@ -109,7 +109,7 @@ p{
 
 
 h2{
-    font-size: 32px;
+    font-size: 52px;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -288,7 +288,7 @@ h2{
   	letter-spacing: 2px;
  	animation: typing 3s steps(30, end), blink .75s step-end infinite;
     white-space: nowrap;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 700;
     border-right: 4px solid orange;
     box-sizing: border-box;
@@ -321,7 +321,7 @@ h2{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 36px;
    margin-top: 2%;
     cursor: pointer;
     background-color: #173b6c;
@@ -393,14 +393,14 @@ h2{
   .bullet{
     list-style: circle;
     margin-left: 5%;
-    font-size: 20px;
+    font-size: 50px;
     text-align: left;
   }
 
   .skills{
     list-style:square;
     margin-left: 10%;
-    font-size: 15px;
+    font-size: 35px;
     
   }
 
@@ -436,7 +436,7 @@ h2{
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -471,7 +471,7 @@ h2{
 .grid-item {
   
 
-  font-size: 25px;
+  font-size: 45px;
   text-align: center;
 }
 
