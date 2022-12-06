@@ -428,9 +428,28 @@ h2{
 
 
 
+.work_cards_grid{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+
 .work_card{
   color: black;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  padding: 10px;
 
+
+  
+}
+
+.grid-item {
+  
+
+  font-size: 25px;
+  text-align: center;
 }
 
 .work_card:not(:first-child) {
@@ -439,16 +458,17 @@ h2{
 }
 
 
-.name { grid-area: name; 
+.name { 
 font-size: 35px;
-text-align: center;
+
 font-weight: bold;
 background-color: grey;
 color: white;
+
+
 }
-.logo { grid-area: logo; 
-text-align: center;
-}
+
+
 
 
 
@@ -456,57 +476,10 @@ text-align: center;
   width: 250px;
   max-width: 200%;
   height: auto;
-
-}
-
-
-.title { grid-area: title; 
-
-font-size: 25px;
-text-align: center;}
-
-
-
-.place { grid-area: place; 
-text-align: center;
-
-font-size: 25px;
-
-}
-.date { grid-area: date; 
-text-align: center;
-
-font-size: 25px;}
-.description{grid-area:description;}
-
-.work_card {
-  display: grid;
-  grid-template-areas:
-  'logo logo logo logo logo logo '
-  'name name name name name name'
-  'date date date date date date'
-  'title title title title title title '
-  'place place place place place place'
-  'description description description description description description';
-  gap: 10px;
-
-
-  
-  padding: 10px;
-}
-
-.grid-container > div {
  
   
-  padding: 5px 0;
-  
+
 }
-  
-  
-
-
-
-  
 
 
 
@@ -527,26 +500,48 @@ main{
 }
 
 .work_card {
+  grid-template-columns: auto auto;
 
-  display: grid;
-  grid-template-areas:
-
-    'name name name name name name'
-    'title title title title title title '
-    'logo logo place place place place'
-    'logo logo date date date date'
-    'description description description description description description';
-  gap: 5px;
 
 
   
-  padding: 10px;
+}
+.name{
+  grid-column: 1/-1;
+}
+
+.title{
+  grid-column: 1/-1;
+  grid-row-start: 2;
+}
+
+.logo{
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.place{
+  grid-column: 2/-1;
+  text-align: right;
+
+}
+.date{
+  grid-column: 2/-1;
+  text-align: right;
+  
+  
+
+}
+
+.description{
+  grid-column: 1/-1;
+
 }
 
 
 .portfolio_images {
 
   flex-direction: row;
+  justify-content: center;
 }
 
 
@@ -577,25 +572,67 @@ main{
     margin-left: 27%;
   }
 
+  .work_cards_grid{
+    grid-template-columns: auto auto;
+  }
+
+  .work_card:not(:first-child) {
+    margin-top: 0px;
+  }
+
+  
+
   .work_card {
-    display: grid;
-    grid-template-areas:
-      'name name name name name name'
-      'title title title title title title '
-      'logo logo place place place place'
-      'logo logo date date date date'
-      'description description description description description description';
-    gap: 5px;
-  
-  
+
     
-    padding: 10px;
+  
+    grid-template-columns: auto;
+    border: 3px solid black;
+
+
+
+  }
+
+  .work_card:last-child{
+    grid-column: 1/-1;
+  }
+
+  
+  
+  .title{
+ 
+    grid-row-start: 3;
+  }
+  
+  .logo{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+  }
+  .place{
+    grid-column: 1/-1;
+    text-align: center;
+  
+  }
+  .date{
+    grid-column: 1/-1;
+    text-align: center;
+    
+    
+  
+  }
+  
+  .description{
+    grid-column: 1/-1;
+  
   }
 
   .portfolio_images {
 
     flex-direction:row-reverse;
+    justify-content: space-around;
   }
+
   
 
 
